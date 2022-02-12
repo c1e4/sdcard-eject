@@ -2,9 +2,9 @@
 Allows to safely eject SD card from integrated  card reader on UNIX systems
 
 Problem:
-If you have a laptop or any other device with integrated SD card reader and UNIX system ob board, then you probably encountered the issue with impossibility to eject SD card after you finished working.
+If you have a laptop or any other device with integrated SD card reader and UNIX system on board, then you probably have encountered the issue with impossibility to eject SD card after you finished working.
 
-"Error ejecting /dev/mmcblk0: Command line eject eject '/dev/-mmcblk0' - if this issue seems familiar, then this script is for you.
+"Error ejecting /dev/mmcblk0: Command line eject eject '/dev/-mmcblk0' - if this issue seems familiar, then the script is for you.
 
 How it works:
 1) Checks if SD card still is still mounted on the system
