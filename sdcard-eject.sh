@@ -37,6 +37,12 @@ else
 	exit 1
 fi
 
+#check if script ran as root
+if [ "$EUID" -ne 0 ]; then 
+	echo -e "${RED}Please run as me as root${NC}"
+	exit 1
+fi
+
 #-----------------------------------------------------------------------
 #Sync (flush) all pending data to drives in order to prevent corruption
 echo "Syncing to force-write all pending data..."
